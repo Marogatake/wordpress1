@@ -1,0 +1,500 @@
+/*
+Theme Name: my-first-theme
+*/
+@charset "utf-8";
+
+html{
+  background-color: #fff;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a,li,ul,span,input{
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: 'Noto Serif JP', serif;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.wrapper{
+  max-width: 1400px;
+  min-width: 480px;
+  margin: 0 auto;
+}
+/* headerの指定 */
+header{
+  width: 81.43%;
+  margin: 0 auto;
+}
+.header_top{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 17px;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  align-items: flex-end;
+}
+.custom-logo{
+  margin-right: 16px;
+}
+.site_title{
+  height: 60px;
+}
+.title{
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  margin-top: 13px;
+}
+.description{
+  display: block;
+  font-size: 18px;
+  color: #952c3e;
+  letter-spacing: 0;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.phone_number{
+  margin-left: auto;
+  margin-right: 16px;
+  margin-top: auto;
+  font-weight: 500;
+}
+.phone_number a{
+  font-size: 38px;
+  color: #38bc9e;
+}
+.phone_number span{
+  font-size: 17px;
+  margin-bottom: 9px;
+  margin-right: 4px;
+}
+.phone_number p{
+  text-align: right;
+  font-size: 13px;
+  line-height: 18.08px;
+}
+.fa-phone-alt{
+  color: #fff;
+}
+.inquiry{
+  background-color: #952c3e;
+  padding: 2px 4px 3px 2px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24.24px;
+  font-weight: 500;
+}
+.inquiry_wrapper{
+  padding: 20px 32px 20px 34px;
+  border: 1px #fff solid;
+}
+.menubar img{
+  display: none;
+  height: 32px;
+  margin-top: 21px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+.line_wrapper{
+  position: relative;
+  bottom: 45px;
+  height: 28px;
+  border-right: 1px #ccc solid;
+  z-index: -1;
+}
+.menu-item-32, .menu-item-29, .menu-item-28{
+  width: 189px;
+  text-align: center;
+  height: 60px;
+}
+.menu-item-31, .menu-item-27{
+  width: 178px;
+  text-align: center;
+  height: 60px;
+}
+.menu-item-30{
+  width: 201px;
+  text-align: center;
+  height: 60px;
+}
+.menu-item-27{
+  border-right: 0;
+}
+.menu-item-32, .menu-item-31, .menu-item-30,.menu-item-29, .menu-item-28{
+  border-right: 1px #ccc solid;
+}
+.menu-item a{
+  display: block;
+  font-size: 16px;
+  width: 99.5%;
+  letter-spacing: 0.05em;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  font-weight: 500;
+  margin-right: 2px;
+}
+.menu span{
+  display: block;
+  color: #952c3e;
+  font-size: 10px;
+  font-weight: 400;
+  padding-top: 8px;
+}
+.menu a:hover{
+  color: #952c3e;
+  background-color: #eee;
+}
+@media screen and (max-width:1200px) {
+  header{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu_surplus{
+    display: none;
+  }
+}
+@media screen and (max-width:890px) {
+  header{
+    width: 87%;
+  }
+  .phone_number{
+    display: none;
+  }
+  .inquiry{
+    display: none;
+  }
+  .menubar img{
+    display: block;
+  }
+  .menu{
+    display: block;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: -308px 0 0 0;
+  }
+  .menu li{
+    display: block;
+    text-align: left;
+    width: 100%;
+    height: 20px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #333;
+    border-right: 0;
+  }
+  .menu-item-27{
+    border-bottom: 0;
+  }
+  .menu a{
+    padding: 7px 0;
+    display: flex;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .menu span{
+    line-height: 18px;
+    padding-top: 2px;
+    padding-left: 20px;
+  }
+  .line_wrapper{
+    display: none;
+  }
+}
+/* header終わり */
+/* .heading内の指定 */
+.heading{
+  /* background-image: url(image/backimage.png); */
+  height: 300px;
+  text-align: center;
+}
+.heading h1{
+  padding-top: 113px;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.heading h3{
+  font-size: 14px;
+  color: #952c3e;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media screen and (max-width:1000px){
+  .heading{
+    background-image: url(image/backimage2.png);
+  }
+}
+@media screen and (max-width:890px) {
+  .heading{
+    margin-top: 101px;
+  }
+}
+/* .heading終わり */
+/* .inquiry_placeの指定 */
+.inquiry_place{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  margin-bottom: -70px;
+}
+.inquiry_form{
+  width: 750px;
+  margin: 0 auto;
+}
+.inquiry_place h4{
+  font-size: 16.3px;
+  text-align: center;
+  margin-top: 98px;
+  margin-bottom: 73px;
+}
+.inquiry_form p{
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #952c3e;
+  letter-spacing: 0;
+}
+.required{
+  margin-left: 50px;
+  padding: 4px 8px 5px 9px;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  background-color: #952c3e;
+  color: #fff;
+  margin-right: 18px;
+}
+.text_company{
+  margin-left: 109px;
+}
+.text_title{
+  margin-left: 94px;
+}
+.inquiry_form input{
+  font-size: 20px;
+  width: 570px;
+  height: 50px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border: #ccc 1.5px solid;
+}
+.main_text{
+  line-height: 50px;
+}
+.inquiry_form textarea{
+  font-size: 20px;
+  margin-left: 126px;
+  width: 570px;
+  height: 200px;
+  padding: 8px;
+  border: #ccc 1.5px solid;
+  vertical-align: top;
+}
+.submit_button{
+  margin-bottom: 0;
+}
+.submit_button input{
+  display: block;
+  width: 280px;
+  height: 64px;
+  background-color: #333;
+  border: 0;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  padding: 0;
+  margin: 0 auto;
+}
+@media screen and (max-width:890px){
+  .inquiry_place{
+    margin-bottom: 50px;
+  }
+  .inquiry_place h4{
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .inquiry_form{
+    width: 80%;
+  }
+  .required{
+    margin-left: 20px;
+  }
+  .text_name,.text_address,.text_company,.text_title{
+    display: block;
+    margin-top: 15px;
+    margin-left: 0;
+    width: 100%;
+  }
+  .text_message{
+    display: block;
+  }
+  .wpcf7-form-control-wrap input{
+    width: 95%;
+  }
+  .inquiry_form textarea{
+    margin-left: 0;
+    width: 95%;
+  }
+}
+/* .inquiry_place終わり */
+/* footerの指定 */
+.backimage_triangle{
+  width: 30.29%;
+  margin-left: auto;
+  z-index: -1;
+}
+.backimage_triangle img{
+  width: 100%;
+  margin-top: -10px;
+  z-index: -1;
+}
+.footer_wrapper{
+  background-color: #e2e2e2;
+  margin-top: -10px;
+  padding-top: 29px;
+  padding-bottom: 70px;
+}
+.footer_info{
+  width: 81.43%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.company{
+  display: flex;
+  align-items: center;
+}
+.footer_logo{
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  padding: 32px 12px 29px 14px;
+  border: 1px solid #000;
+  margin-right: 14px;
+  font-weight: 400;
+}
+.company a:hover{
+  color: #952c3e;
+}
+.company h2{
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  margin-right: 20px;
+  font-weight: 400;
+}
+.facebook{
+  margin-left: -20px;
+}
+.circle i{
+  color: #fff;
+  font-size: 50px;
+  line-height: 64px;
+  width: 50px;
+}
+.mark{
+  color: #000;
+  line-height: 64px;
+}
+.mark i{
+  width: 50px;
+}
+.footer_menu{
+  display: flex;
+}
+.menu-item-88,.menu-item-89,.menu-item-90,.menu-item-91,.menu-item-92{
+  border-right: 1px solid #000;
+}
+.menu-item-93{
+  border-right: 0px;
+}
+.footer_menu a{
+  font-size: 14px;
+  padding: 0 13px ;
+  font-weight: 400;
+}
+.footer_menu a:hover{
+  color: #952c3e;
+}
+.footer_address,.footer_inquiry{
+  display: none;
+}
+
+.copyright{
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  background-color: #333;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width:1340px){
+  .footer_info{
+    width: 95%;
+  }
+}
+@media screen and (max-width:1150px){
+  .footer_menu{
+    display: none;
+  }
+  .company{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width:890px){
+  .backimage_triangle{
+    display: none;
+  }
+  .company{
+    margin: 0;
+  }
+  .footer_address,.footer_inquiry{
+    display: block;
+  }
+  .footer_inquiry{
+    width: 210px;
+    margin-top: 10px;
+    margin-left: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width:830px){
+  .company h2{
+    width: 140px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width:780px){
+  .footer_info{
+    display: block;
+  }
+  .company,.footer_address,.footer_inquiry{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 370px;
+    margin-top: 18px;
+  }
+  .company{
+    padding-left: 25px;
+  }
+  .footer_address p{
+    text-align: center;
+  }
+}
+/* footer終わり */
